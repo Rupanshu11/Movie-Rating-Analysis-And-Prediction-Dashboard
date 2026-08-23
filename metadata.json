@@ -1,0 +1,31 @@
+{
+  "features": [
+    "popularity",
+    "vote_count",
+    "release_year",
+    "release_month",
+    "Popularity_per_Vote"
+  ],
+  "target": "vote_average",
+  "metrics": {
+    "Linear Regression": {
+      "MAE": 1.33,
+      "MSE": 3.726,
+      "RMSE": 1.93,
+      "R2 Score": 0.011
+    },
+    "Random Forest": {
+      "MAE": 0.857,
+      "MSE": 1.401,
+      "RMSE": 1.184,
+      "R2 Score": 0.628
+    }
+  },
+  "feature_importance": {
+    "vote_count": 0.890064751812917,
+    "Popularity_per_Vote": 0.0351555416249759,
+    "release_year": 0.03466622224854484,
+    "popularity": 0.028160039975446003,
+    "release_month": 0.01195344433811632
+  }
+}
